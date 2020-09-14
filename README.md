@@ -37,4 +37,4 @@ For best results, use a recent version of Safari or Chrome[#1].
 Copyright (C) 2015-2020 Apple Inc. All rights reserved.
 
 ## Remark
-[#1] Not working on Apple Silicon yet.
+[#1] Chrome is Not working on Apple Silicon yet.
