@@ -21,7 +21,7 @@ CKCatalog.init = function() {
 
         apiTokenAuth: {
           // And generate a web token through CloudKit Dashboard.
-          apiToken: 'e257905ec3989ae3945a8f7152fa2b047817ef516a2c943710744b087134ba38',
+          apiToken: '<API_token>',
 
           persist: true, // Sets a cookie.
           
