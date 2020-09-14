@@ -1,5 +1,9 @@
 # The CloudKit Catalog Web App V2
 
+Learn more: https://learn.startway.io/cloudkitjs/
+
+![Cover](https://cdn-images-1.medium.com/max/2600/1*ES7GB2vsVS_-b7zHu60OyA.png)
+
 This web app provides executable sample code for the core API methods provided by the CloudKit JS JavaScript library. 
 Topics covered:
 
