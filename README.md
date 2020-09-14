@@ -2,6 +2,8 @@
 
 Learn more: https://learn.startway.io/cloudkitjs/
 
+Tutorial: https://medium.com/@1998design/how-to-use-apple-cloudkit-js-v2-for-web-ce753258cc95
+
 ![Cover](https://cdn-images-1.medium.com/max/2600/1*ES7GB2vsVS_-b7zHu60OyA.png)
 
 This web app provides executable sample code for the core API methods provided by the CloudKit JS JavaScript library. 
