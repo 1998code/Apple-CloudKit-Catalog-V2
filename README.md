@@ -1,6 +1,6 @@
 # The CloudKit Catalog Web App V2
 
-Learn more: https://learn.startway.io/cloudkitjs/
+Demo: https://learn.startway.io/cloudkitjs/
 
 Tutorial: https://medium.com/@1998design/how-to-use-apple-cloudkit-js-v2-for-web-ce753258cc95
 
