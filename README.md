@@ -36,7 +36,4 @@ Create this record type through CloudKit Dashboard if it doesn't already exist.
  
 For best results, use a recent version of Safari or Chrome[#1].
 
-Copyright (C) 2015-2020 Apple Inc. All rights reserved.
-
-## Remark
-[#1] <s>Chrome is Not working on Apple Silicon yet.</s> Try Chrome Canary instead.
+Copyright (C) 2015-2021 Apple Inc. All rights reserved.
