@@ -34,6 +34,8 @@ Create this record type through CloudKit Dashboard if it doesn't already exist.
 
 ## Runtime Requirements
  
-For best results, use a recent version of Safari or Chrome[#1].
+For best results, use a recent version of Safari or Chrome.
+
+If you are using Safari, remember to enable cross-site tracking.
 
 Copyright (C) 2015-2021 Apple Inc. All rights reserved.
