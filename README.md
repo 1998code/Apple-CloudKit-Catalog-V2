@@ -1,6 +1,6 @@
 # The CloudKit Catalog Web App V2
 
-Demo: https://learn.startway.io/cloudkitjs/
+Demo: https://cloudkitjs.vercel.app
 
 Tutorial: https://medium.com/@1998design/how-to-use-apple-cloudkit-js-v2-for-web-ce753258cc95
 
