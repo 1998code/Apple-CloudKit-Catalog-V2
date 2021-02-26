@@ -1,4 +1,4 @@
-# The CloudKit Catalog Web App V2
+# CloudKit Catalog Web App V2
 
 Demo: https://cloudkitjs.vercel.app
 
