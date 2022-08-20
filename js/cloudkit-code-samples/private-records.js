@@ -54,7 +54,7 @@ CKCatalog.tabs['private-records'] = (function() {
         placeholder: 'Record name',
         name: 'record-id',
         label: 'recordName:',
-        value: 'NewItem'
+        value: 'New Item'
       })
       .addInputField({
         type: 'text',
@@ -77,7 +77,7 @@ CKCatalog.tabs['private-records'] = (function() {
       placeholder: 'Record ID',
       name: 'record-id',
       label: 'recordName:',
-      value: ''
+      value: 'New Item'
     })
     .addInputField({
       type: 'text',
@@ -112,8 +112,8 @@ CKCatalog.tabs['private-records'] = (function() {
       label: 'asset:'
     });
 
-  var saveRecordSample = {
-    title: 'saveRecord',
+  var saveRecordsSample = {
+    title: 'saveRecords',
     form: createItemForm,
     run: function() {
       var recordName = this.form.fields['record-id'].value;
@@ -130,7 +130,7 @@ CKCatalog.tabs['private-records'] = (function() {
       var asset = this.form.fields['asset'].files[0];
       return this.sampleCode(recordName,changeTag,zoneName,name,location,asset);
     },
-    sampleCode: function demoSaveRecord(recordName,recordChangeTag,zoneName,name,location,asset) {
+    sampleCode: function demoSaveRecords(recordName,recordChangeTag,zoneName,name,location,asset) {
       var container = CloudKit.getDefaultContainer();
       var privateDB = container.privateCloudDatabase;
 
@@ -164,7 +164,7 @@ CKCatalog.tabs['private-records'] = (function() {
         record.recordName = recordName;
       }
 
-      return privateDB.saveRecord(record,options)
+      return privateDB.saveRecords(record,options)
         .then(function(response) {
           if(response.hasErrors) {
 
@@ -195,17 +195,17 @@ CKCatalog.tabs['private-records'] = (function() {
 
   };
 
-  var deleteRecordSample = {
-    title: 'deleteRecord',
+  var deleteRecordsSample = {
+    title: 'deleteRecords',
     form: createRecordIDForm('delete-record-form'),
     run: runSampleCode,
-    sampleCode: function demoDeleteRecord(recordName,zoneName) {
+    sampleCode: function demoDeleteRecords(recordName,zoneName) {
       var container = CloudKit.getDefaultContainer();
       var privateDB = container.privateCloudDatabase;
 
       var options = zoneName ? { zoneID: zoneName } : undefined;
 
-      return privateDB.deleteRecord(recordName,options)
+      return privateDB.deleteRecords(recordName,options)
         .then(function(response) {
           if(response.hasErrors) {
 
@@ -225,17 +225,17 @@ CKCatalog.tabs['private-records'] = (function() {
     }
   };
 
-  var fetchRecordSample = {
-    title: 'fetchRecord',
+  var fetchRecordsSample = {
+    title: 'fetchRecords',
     form: createRecordIDForm('fetch-record-form'),
     run: runSampleCode,
-    sampleCode: function demoFetchRecord(recordName,zoneName) {
+    sampleCode: function demoFetchRecords(recordName,zoneName) {
       var container = CloudKit.getDefaultContainer();
       var privateDB = container.privateCloudDatabase;
 
       var options = zoneName ? { zoneID: zoneName } : undefined;
 
-      return privateDB.fetchRecord(recordName,options)
+      return privateDB.fetchRecords(recordName,options)
         .then(function(response) {
           if(response.hasErrors) {
 
@@ -265,6 +265,6 @@ CKCatalog.tabs['private-records'] = (function() {
     }
   };
 
-  return [ saveRecordSample, deleteRecordSample, fetchRecordSample ];
+  return [ saveRecordsSample, deleteRecordsSample, fetchRecordsSample ];
 
 })();
